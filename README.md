@@ -1,6 +1,6 @@
-# Tifa Jade's Portfolio
+# Zam's Portfolio
 
-Welcome to the repository for my personal portfolio website! This is a fully custom-built site showcasing my work as a creative director. The site is fully open-source, made with Pico CSS and deploys via 11ty on Netlify.
+Welcome to the repository for my personal portfolio website! This is a fully custom-built site showcasing my work as a graphic designer. The site is fully open-source, made with Pico CSS and deploys via 11ty on Netlify.
 
 ## Features
 
@@ -45,9 +45,9 @@ To run this project locally:
 
 The site is automatically deployed to Netlify on every push to the `main` branch. To deploy manually, ensure you’ve set up your Netlify project and push changes to the repository.
 
-## Connect with Me
+## Designed By Tifa Jade
 
-Check out my portfolio live at [tifajade.com](https://tifajade.com) or connect with me on:
+[tifajade.com](https://tifajade.com) or connect with me on:
 
 - [Email](mailto:hi@tifajade.com)
 - [LinkedIn](https://www.linkedin.com/in/tifajade/)
