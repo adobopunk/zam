@@ -1,0 +1,37 @@
+<nav class="project-navigation">
+  <section class="gallery">
+    {% if next1 or next2 %} {% if next1 %}
+    <div class="image-container">
+      <a href="{{ next1.url }}">
+        <div class="image-preview-container">
+          <img
+            src="{{ next1.data.image.jpg or next1.data.image or '/assets/img/og-image.jpg' }}"
+            alt="Placeholder for {{ next1.data.title }}"
+            class="gallery__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-preview-title">
+          <h3 class="gallery__title">{{ next1.data.title }}</h3>
+        </div>
+      </a>
+    </div>
+    {% endif %} {% if next2 %}
+    <div class="image-container">
+      <a href="{{ next2.url }}">
+        <div class="image-preview-container">
+          <img
+            src="{{ next2.data.image.jpg or next2.data.image or '/assets/img/og-image.jpg' }}"
+            alt="Placeholder for {{ next2.data.title }}"
+            class="gallery__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-preview-title">
+          <h3 class="gallery__title">{{ next2.data.title }}</h3>
+        </div>
+      </a>
+    </div>
+    {% endif %} {% endif %}
+  </section>
+</nav>
