@@ -1,0 +1,4 @@
+pwd - checking directory
+npm run dev -- loads up website in preview (in local browser)
+option z - word wrap
+
