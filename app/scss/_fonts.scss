@@ -1,6 +1,14 @@
 @use "../scss/util/" as u;
 
 @font-face {
+  font-family: "Neue Haas Unica";
+  src: url(/assets/fonts/Neue\ Haas\ Unica\ W1G\ Regular.ttf) format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Parisienne";
   src: url("/assets/fonts/Parisienne/Parisienne-regular.woff2") format("woff2"),
     url("/assets/fontsParisienne/Parisienne-regular.woff") format("woff"),
@@ -59,7 +67,7 @@
 }
 
 body {
-  font-family: "Hahmlet", "Times New Roman", serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
 }
 
 h1,
@@ -68,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
   font-weight: 200;
   margin-block-start: 10px;
   line-height: 1;
@@ -82,19 +90,6 @@ h1 {
 h2 {
   font-size: 2rem;
   font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
-}
-
-h1 span.jade,
-h2 span.jade,
-h3 span.jade,
-p span.jade {
-  color: var(--pico-primary);
-  font-family: "Ohno Blazeface", "Times New Roman", serif;
-}
-
-span.jade-hover {
-  font-family: "Ohno Blazeface", "Times New Roman", serif;
-  transition: color 0.3s ease;
 }
 
 span.jade-hover:hover {
@@ -133,7 +128,7 @@ p.small {
 
 .title,
 .subtitle {
-  font-family: "rethink sans", sans-serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
   font-size: 2rem;
   font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
   text-align: left;
@@ -149,11 +144,11 @@ nav,
 .previous,
 .back,
 figcaption {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
 }
 
 .button * {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
 }
 
 .button h1,
@@ -161,6 +156,6 @@ figcaption {
 .button p,
 button *,
 button {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Neue Haas Unica", "Arial", sans-serif;
   font-size: 0.75rem;
 }

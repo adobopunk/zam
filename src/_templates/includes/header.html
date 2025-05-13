@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light" />
 
-    <title>{{ client }}</title>
+    <title>
+      {% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}
+    </title>
     <!-- SEO -->
 
     <meta
@@ -13,7 +15,10 @@
       content="{% if subtitle %}{{ subtitle }}{% else %}{{ site.description }}{% endif %}"
     />
 
-    <meta property="og:title" content="{{ title }}" />
+    <meta
+      property="og:title"
+      content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}"
+    />
     <meta
       property="og:description"
       content="{% if subtitle %}{{ subtitle }}{% else %}{{ site.description }}{% endif %}"
