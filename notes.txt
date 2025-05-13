@@ -2,3 +2,23 @@ pwd - checking directory
 npm run dev -- loads up website in preview (in local browser)
 option z - word wrap
 
+HOW TO SAVE YOUR PROGRESS:
+git add .
+git commit -m "update bomb project"
+git push
+
+git checkout zamsite -> make sure you're on the zam branch (also look in lower left)
+
+git fetch upstream -> pull in updates TJ makes
+git merge upstream/main -> merge changes into branch
+
+git status -> check status of files in git
+
+
+projects to include 
+Bloom bomb - product design
+Good Loser - brand Identity
+Infographic - Information Design 
+Zine!!! Maz Press - Zine.
+The Spectator - Editorial
+Wellness and health - job?
