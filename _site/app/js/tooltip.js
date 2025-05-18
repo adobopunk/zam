@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent the default behavior (link)
 
         // Specify the email to be copied
-        const emailToCopy = "hi@tifajade.com"; // Change this to the desired email
+        const emailToCopy = "zamortega@proton.me"; // Change this to the desired email
 
         // Copy the email to the clipboard
         navigator.clipboard

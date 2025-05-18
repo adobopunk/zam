@@ -4,7 +4,7 @@ option z - word wrap
 
 HOW TO SAVE YOUR PROGRESS:
 git add .
-git commit -m "update bomb project"
+git commit -m "updating the images and adding pages"
 git push
 
 git checkout zamsite -> make sure you're on the zam branch (also look in lower left)
