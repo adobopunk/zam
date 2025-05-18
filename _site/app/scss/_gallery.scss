@@ -2,7 +2,7 @@
 
 .gallery {
   column-count: 1;
-  column-gap: u.rem(16);
+  column-gap: u.rem(4);
   margin-block-end: 60px;
 
   @include u.breakpoint(large) {
@@ -10,11 +10,8 @@
   }
 
   &__item {
-    // Remove grid-specific rules
-    display: inline-block;
-    width: 100%;
-    margin-bottom: u.rem(16); // manual row gap
     break-inside: avoid;
+    margin-bottom: u.rem(4); // control row spacing
   }
 
   &__title {
@@ -135,7 +132,8 @@
 
 .hover-overlay .gallery__title {
   margin-bottom: 0.1rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 .hover-overlay .gallery__subtitle {
