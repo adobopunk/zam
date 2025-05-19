@@ -26,7 +26,7 @@
     <meta property="og:url" content="https://zamortega.com/projects/bloom-bomb/" />
     <meta
       property="og:image"
-      content="https://zamortega.com/assets/img/IMG_5134.jpeg"
+      content="https://zamortega.com/assets/img/og-image.jpg"
     />
 
     <meta property="og:type" content="website" />
@@ -54,14 +54,17 @@
     <link rel="stylesheet" href="/assets/css/pico.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <link rel="preconnect" href="https://player.vimeo.com" />
-    <link rel="preconnect" href="https://i.vimeocdn.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
 
     <script>
       // Check local storage for theme and set it before the page renders
       const savedTheme = localStorage.getItem("theme") || "light";
       document.documentElement.setAttribute("data-theme", savedTheme);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </head>
   <body>
     <a href="#main" class="visually-hidden">Skip to main content</a>
@@ -265,7 +268,32 @@
     <div class="wrapper wrapper-home">
       <div class="layout-main wrapper-m project-layout">
         
-<img class="featured" src="/assets/img/IMG_5134.jpeg" alt="" />
+<div class="glider-container">
+  <div class="glider">
+    
+    <div class="glider-slide">
+      <div class="image-wrapper">
+        <img src="/assets/img/IMG_5134.jpeg" alt="Project image 1" />
+      </div>
+    </div>
+    
+    <div class="glider-slide">
+      <div class="image-wrapper">
+        <img src="/assets/img/IMG_6396.jpeg" alt="Project image 2" />
+      </div>
+    </div>
+    
+    <div class="glider-slide">
+      <div class="image-wrapper">
+        <img src="/assets/img/IMG_6446.jpeg" alt="Project image 3" />
+      </div>
+    </div>
+    
+  </div>
+
+  <div role="tablist" class="dots"></div>
+</div>
+
 <h1 class="title">Bloom Bomb (2005)</h1>
 
 <p>
@@ -330,7 +358,7 @@
       <a href="/projects/good-loser/">
         <div class="image-preview-container">
           <img
-            src="/assets/img/IMG_6396.jpeg"
+            src="/assets/img/og-image.jpg"
             alt="Placeholder for Good Loser"
             class="gallery__image"
             loading="lazy"
@@ -351,7 +379,7 @@
       <a href="/projects/spectator/">
         <div class="image-preview-container">
           <img
-            src="/assets/img/IMG_6446.jpeg"
+            src="/assets/img/og-image.jpg"
             alt="Placeholder for The Spectator"
             class="gallery__image"
             loading="lazy"
@@ -375,6 +403,8 @@
     </div>
   </article>
 </main>
+<script src="/app/js/glider.js"></script>
+
 
 
 <footer class="footer" id="contact">
@@ -612,20 +642,13 @@
 
 
 </footer>
-<!-- <script src="/app/js/fadein.js" defer></script> -->
-<!-- <script src="/app/js/darkmode.js" defer></script> -->
+
 <script src="/app/js/nav.js" defer></script>
-<!-- <script src="/app/js/showreel.js" defer></script> -->
 <script src="/app/js/footer.js" defer></script>
-<!-- <script src="/app/js/collapsible.js" defer></script> -->
-<!-- <script src="/app/js/scroll.js" defer></script> -->
-<!-- <script src="/app/js/sticky.js" defer></script> -->
-<!-- <script src="/app/js/stagger.js" defer></script> -->
-<!-- <script src="/app/js/togglelogo.js" defer></script> -->
+
 <script src="/app/js/tooltip.js" defer></script>
 <script src="/app/js/hover.js" defer></script>
-<!-- <script src="/app/js/funfacts.js"></script> -->
-<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+
 
 </body>
 </html>

@@ -54,14 +54,17 @@
     <link rel="stylesheet" href="/assets/css/pico.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <link rel="preconnect" href="https://player.vimeo.com" />
-    <link rel="preconnect" href="https://i.vimeocdn.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
 
     <script>
       // Check local storage for theme and set it before the page renders
       const savedTheme = localStorage.getItem("theme") || "light";
       document.documentElement.setAttribute("data-theme", savedTheme);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </head>
   <body>
     <a href="#main" class="visually-hidden">Skip to main content</a>
@@ -285,7 +288,7 @@
     <div class="image-container">
       <a href="/projects/zam-brand/" class="video-link">
         <img
-          src="/assets/img/Business_Card_Mockup.jpg"
+          src="/assets/img/og-image.jpg"
           alt="Image for Zam Brand"
           class="gallery__image"
           loading="lazy"
@@ -307,7 +310,7 @@
   
   <div class="gallery__item">
     <div class="image-container">
-      <a href="/projects/bloom-bomb/" class="video-link">
+      <a href="/projects/main-project-test-page/" class="video-link">
         <img
           src="/assets/img/IMG_5134.jpeg"
           alt="Image for Bloom Bomb"
@@ -323,7 +326,7 @@
       </a>
     </div>
     <div class="image-title">
-      <a href="/projects/bloom-bomb/">
+      <a href="/projects/main-project-test-page/">
         <h2 class="gallery__title">Bloom Bomb</h2>
       </a>
     </div>
@@ -333,7 +336,7 @@
     <div class="image-container">
       <a href="/projects/good-loser/" class="video-link">
         <img
-          src="/assets/img/IMG_6396.jpeg"
+          src="/assets/img/og-image.jpg"
           alt="Image for Good Loser"
           class="gallery__image"
           loading="lazy"
@@ -357,7 +360,7 @@
     <div class="image-container">
       <a href="/projects/spectator/" class="video-link">
         <img
-          src="/assets/img/IMG_6446.jpeg"
+          src="/assets/img/og-image.jpg"
           alt="Image for The Spectator"
           class="gallery__image"
           loading="lazy"
@@ -622,20 +625,13 @@
 
 
 </footer>
-<!-- <script src="/app/js/fadein.js" defer></script> -->
-<!-- <script src="/app/js/darkmode.js" defer></script> -->
+
 <script src="/app/js/nav.js" defer></script>
-<!-- <script src="/app/js/showreel.js" defer></script> -->
 <script src="/app/js/footer.js" defer></script>
-<!-- <script src="/app/js/collapsible.js" defer></script> -->
-<!-- <script src="/app/js/scroll.js" defer></script> -->
-<!-- <script src="/app/js/sticky.js" defer></script> -->
-<!-- <script src="/app/js/stagger.js" defer></script> -->
-<!-- <script src="/app/js/togglelogo.js" defer></script> -->
+
 <script src="/app/js/tooltip.js" defer></script>
 <script src="/app/js/hover.js" defer></script>
-<!-- <script src="/app/js/funfacts.js"></script> -->
-<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+
 
 </body>
 </html>
