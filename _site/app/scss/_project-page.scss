@@ -1,14 +1,15 @@
 @use "../scss/util/" as u;
 
 .project {
-  li::before {
-    content: "▶ ";
-    font-size: 0.5em;
-  }
   &__info {
     display: flex;
     gap: u.rem(60);
     align-items: flex-start;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
     @include u.breakpoint-down(medium) {
       flex-direction: column;
@@ -16,10 +17,11 @@
       align-items: flex-start;
     }
 
-    li::before {
-      content: "▶ ";
-      font-size: 0.5em;
-    }
+    // li::before {
+    //   list-style: none;
+    //   content: "▶ ";
+    //   font-size: 0.5em;
+    // }
   }
 
   &__credits {
@@ -139,7 +141,7 @@ h2.project__step-title,
 .project-layout {
   p {
     @include u.breakpoint(large) {
-      max-width: 50%;
+      max-width: 75%;
     }
   }
 }
