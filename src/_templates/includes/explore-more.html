@@ -5,7 +5,7 @@
       <a href="{{ next1.url }}">
         <div class="image-preview-container">
           <img
-            src="{{ next1.data.image.jpg or next1.data.image or '/assets/img/og-image.jpg' }}"
+            src="{{ next1.data.images[0] or '/assets/img/og-image.jpg' }}"
             alt="Placeholder for {{ next1.data.title }}"
             class="gallery__image"
             loading="lazy"
@@ -26,7 +26,7 @@
       <a href="{{ next2.url }}">
         <div class="image-preview-container">
           <img
-            src="{{ next2.data.image.jpg or next2.data.image or '/assets/img/og-image.jpg' }}"
+            src="{{  next2.data.images[0] or '/assets/img/og-image.jpg' }}"
             alt="Placeholder for {{ next2.data.title }}"
             class="gallery__image"
             loading="lazy"

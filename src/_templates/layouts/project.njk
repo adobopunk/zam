@@ -5,6 +5,19 @@
     {% include "includes/nav.html" %}
     <div class="wrapper wrapper-home">
       <div class="layout-main wrapper-m project-layout">
+        <div class="glider-container">
+          <div class="glider">
+            {% for img in images %}
+            <div class="glider-slide">
+              <div class="image-wrapper">
+                <img src="{{ img }}" alt="Project image {{ loop.index }}" />
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div role="tablist" class="dots"></div>
+        </div>
         {{ content | safe }}
         <h2>More Projects:</h2>
         {# First, create a list of featured projects #} {% set featured_projects
@@ -31,4 +44,6 @@
     </div>
   </article>
 </main>
+<script src="/app/js/glider.js"></script>
+
 {% include "includes/footer.html" %}
