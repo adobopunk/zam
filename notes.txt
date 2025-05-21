@@ -2,6 +2,9 @@ pwd - checking directory
 npm run dev -- loads up website in preview (in local browser)
 option z - word wrap
 
+STOP SERVER:
+CTRL-C
+
 HOW TO SAVE YOUR PROGRESS:
 git add .
 git commit -m "updating the images and adding pages"
