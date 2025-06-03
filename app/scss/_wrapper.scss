@@ -67,7 +67,7 @@
 
 .wrapper-f {
   gap: 10%;
-  width: clamp(250px, 85vw, 1200px);
+  width: clamp(250px, 45vw, 640px);
   @include u.breakpoint-down(medium) {
     width: clamp(250px, 98vw, 1080px);
     max-width: 98%;

@@ -152,7 +152,7 @@ img {
 
 .wrapper-f {
   gap: 10%;
-  width: clamp(250px, 85vw, 1200px);
+  width: clamp(250px, 45vw, 640px);
 }
 @media (max-width: 56.24875em) {
   .wrapper-f {
@@ -1313,7 +1313,13 @@ h2.project__step-title,
 }
 
 .project-layout > img {
-  min-width: 100%;
+  max-width: 100%;
+}
+
+.project-layout > img.center {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .next-arrow,

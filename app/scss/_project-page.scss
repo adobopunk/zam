@@ -98,9 +98,12 @@ h2.project__step-title,
 }
 
 .project-layout > img {
-  min-width: 100%;
-  // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  // margin-block: 20px;
+  max-width: 100%;
+}
+.project-layout > img.center {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .next-arrow,
