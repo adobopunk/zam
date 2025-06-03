@@ -23,16 +23,31 @@
   align-items: center; /* Align items vertically centered */
   padding: 10px 20px; /* Add padding for spacing */
   box-sizing: border-box;
-  background-color: var(
-    --pico-background-color
-  ); /* Use Pico background color */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight drop shadow */
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
 }
+
+.nav-visible {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+// .nav-transparent {
+//   background-color: transparent;
+//   box-shadow: none;
+// }
+
+// .item-nodisplay {
+//   opacity: 0;
+// }
+
+// .item-display {
+//   opacity: 1;
+// }
 
 .sidebar__homelink {
   font-size: u.rem(24);
   text-align: center;
-  font-family: "Ringift", "Times New ROman", serif;
+  font-family: "Ringift", "Times New Roman", serif;
   margin-right: auto;
   max-height: 50px;
 
@@ -101,6 +116,7 @@ nav {
     gap: 5px; /* Add spacing between links */
     align-items: center;
     justify-content: center;
+    transition: opacity 0.8s ease;
   }
 
   &__links a {
@@ -265,6 +281,7 @@ nav {
   color: inherit;
   cursor: pointer;
   outline: none;
+  transition: opacity 0.8s ease;
 }
 
 .hamburger-description {
